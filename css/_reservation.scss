@@ -1,0 +1,31 @@
+
+.reservation-center {
+  float: none;
+  margin: 0 auto;
+}
+
+.reservation {
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  select {
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .form-group__control {
+    width: 100%;
+  }
+
+
+  &__title {
+    text-transform: uppercase;
+    font: 900 27px $global-font-family;
+
+
+  }
+
+}

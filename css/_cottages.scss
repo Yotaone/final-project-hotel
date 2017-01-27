@@ -1,0 +1,63 @@
+
+
+.cottages-container {
+  margin: 0 auto;
+  float: none;
+
+
+}
+
+.cottages-block {
+  border-top:  5px solid lightgrey;
+
+
+
+  &-description {
+    border-left: 5px solid lightgrey;
+
+    &__title {
+      text-transform: uppercase;
+      font: 900 27px $global-font-family;
+
+    }
+
+    &__about {
+      height: 150px;
+      overflow: auto;
+
+
+      font: 500 18px $global-font-family;
+    }
+
+    &__price {
+      margin-top: 5px;
+
+      font: 700 18px $global-font-family;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: $border-radius;
+
+      background-color: $link-background-color;
+      color: $link-color;
+
+      &:hover {
+        background-color: $link-color;
+        color: $link-background-color;
+      }
+    }
+  }
+
+  .img {
+    margin-top: 10px;
+    border-radius: $border-radius;
+
+  }
+
+  &-view {
+
+  }
+}

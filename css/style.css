@@ -1,0 +1,370 @@
+body * {
+  box-sizing: border-box; }
+
+body {
+  background-color: lightgoldenrodyellow; }
+
+body, div, a, p, ul, li, h1, h2, h3 {
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none; }
+
+a {
+  cursor: pointer; }
+
+.grid-container {
+  height: auto;
+  width: 100%; }
+
+.grid-container:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.col-md-pull {
+  left: 50%; }
+
+.col-md-push {
+  right: 50%; }
+
+[class*="col"] {
+  float: left;
+  position: relative;
+  padding: 10px; }
+  @media screen and (max-width: 768px) {
+    [class*="col"]:not(.col-sm) {
+      padding: 0; } }
+
+.col-md-1 {
+  width: 8.33%; }
+
+.col-md-2 {
+  width: 16.66%; }
+
+.col-md-3 {
+  width: 25%; }
+
+.col-md-4 {
+  width: 33.33%; }
+
+.col-md-5 {
+  width: 41.66%; }
+
+.col-md-6 {
+  width: 50%; }
+
+.col-md-7 {
+  width: 58.33%; }
+
+.col-md-8 {
+  width: 66.66%; }
+
+.col-md-9 {
+  width: 75%; }
+
+.col-md-10 {
+  width: 83.33%; }
+
+.col-md-11 {
+  width: 91.66%; }
+
+.col-md-12 {
+  width: 100%; }
+
+.vertical-center {
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+
+@media screen and (max-width: 1040px) {
+  .col-tablet-menu {
+    width: 100%;
+    float: none;
+    margin: 0 auto; }
+  .col-logo-media {
+    width: 33.33%; } }
+
+@media screen and (max-width: 768px) {
+  .col-sm {
+    width: 100%;
+    float: none;
+    margin: 0 auto; }
+  [class*="col-md"] {
+    padding: 0; }
+  .col-sm:not(p) {
+    float: none;
+    margin-top: 10px; } }
+
+.footer-m {
+  margin-top: 20px;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 0;
+  min-height: 80px;
+  background-color: #32322a; }
+
+.footer {
+  box-shadow: -1px -6px 32px 0px #574d57; }
+  .footer__text {
+    display: block;
+    text-transform: uppercase;
+    color: honeydew;
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
+    font: 500 16px "Century Gothic"; }
+  .footer-social__btn {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    margin-right: 5px;
+    border-radius: 10%;
+    vertical-align: middle; }
+    .footer-social__btn:hover {
+      position: relative;
+      background-color: #669ec0; }
+    .footer-social__btn:active {
+      position: relative;
+      background-color: #5496bd; }
+  .footer-social__twitter {
+    background: 15px #81b3d2 url("../img/icons/twitter.png") no-repeat; }
+  .footer-social__facebook {
+    background: 18px #81b3d2 url("../img/icons/facebook.png") no-repeat; }
+  .footer-social__youtube {
+    background: 13px #81b3d2 url("../img/icons/youtube.png") no-repeat; }
+
+@media screen and (max-width: 768px) {
+  .col-sm:not(p) {
+    float: none;
+    margin-top: 10px; } }
+
+.header-container {
+  background-color: #32322a;
+  font-size: 0; }
+  .header-container label {
+    display: none;
+    position: relative;
+    border-radius: 10%;
+    margin: 10px;
+    width: 55px;
+    height: 55px;
+    z-index: 9999;
+    font-size: 40px;
+    line-height: 20px;
+    color: honeydew;
+    float: right;
+    padding: 15px;
+    background-color: lightgrey; }
+    @media screen and (max-width: 1040px) {
+      .header-container label {
+        display: block; } }
+  .header-container .tablet-menu__btn {
+    float: right;
+    display: none; }
+    .header-container .tablet-menu__btn:checked ~ .nav {
+      display: block; }
+  .header-container .logo__img {
+    min-width: 230px;
+    width: 100%;
+    height: auto; }
+  @media screen and (max-width: 1040px) {
+    .header-container .nav-m {
+      display: none; } }
+  .header-container .nav-m .menu {
+    float: none;
+    text-align: center; }
+    .header-container .nav-m .menu__item {
+      display: inline-block;
+      left: 5%;
+      padding-left: 10px;
+      padding-bottom: 10px; }
+      @media screen and (max-width: 1040px) {
+        .header-container .nav-m .menu__item {
+          padding: 0;
+          float: none;
+          margin: 0 auto;
+          left: 0; } }
+      .header-container .nav-m .menu__item:not(:last-child):after {
+        content: "";
+        padding-left: 10px;
+        border-right: 2px solid lightseagreen;
+        font: 500 18px "Century Gothic"; }
+        @media screen and (max-width: 1040px) {
+          .header-container .nav-m .menu__item:not(:last-child):after {
+            display: none; } }
+    .header-container .nav-m .menu__link {
+      text-transform: uppercase;
+      color: lightseagreen;
+      font: 500 18px "Century Gothic";
+      padding: 10px; }
+      .header-container .nav-m .menu__link:hover {
+        color: honeydew;
+        border-bottom: 1px solid honeydew; }
+        @media screen and (max-width: 1040px) {
+          .header-container .nav-m .menu__link:hover {
+            color: honeydew;
+            border-bottom: 0px solid honeydew; } }
+      .header-container .nav-m .menu__link:active {
+        color: honeydew;
+        border-bottom: 1px solid honeydew; }
+    .header-container .nav-m .menu .active {
+      color: honeydew; }
+
+.main {
+  overflow: hidden; }
+
+.slider {
+  width: 4098px;
+  overflow: hidden;
+  max-height: 540px;
+  height: 100%; }
+  .slider__img {
+    height: 100%;
+    width: 100%; }
+
+.slider div {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 100%; }
+
+.benefits__definition {
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+  font: 900 25px "Century Gothic"; }
+
+.benefits-block {
+  margin: 2% 0 20px 7%;
+  min-height: 200px;
+  max-width: 340px;
+  text-align: center;
+  background-color: antiquewhite;
+  border-radius: 10%;
+  box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.5); }
+  .benefits-block__img {
+    display: inline-block; }
+  .benefits-block__title {
+    font: 900 20px "Century Gothic";
+    overflow: hidden;
+    max-height: 81px; }
+  .benefits-block__about {
+    font: 500 16px "Century Gothic";
+    overflow: hidden;
+    max-height: 81px; }
+
+@media (max-width: 768px) {
+  .col-sm:not(p) {
+    float: none;
+    margin: 10px auto 0; } }
+
+.cottages-container {
+  margin: 0 auto;
+  float: none; }
+
+.cottages-block {
+  border-top: 5px solid lightgrey; }
+  .cottages-block-description {
+    border-left: 5px solid lightgrey; }
+    .cottages-block-description__title {
+      text-transform: uppercase;
+      font: 900 27px "Century Gothic"; }
+    .cottages-block-description__about {
+      height: 150px;
+      overflow: auto;
+      font: 500 18px "Century Gothic"; }
+    .cottages-block-description__price {
+      margin-top: 5px;
+      font: 700 18px "Century Gothic"; }
+    .cottages-block-description .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 10%;
+      background-color: lightseagreen;
+      color: #bde8e6; }
+      .cottages-block-description .btn:hover {
+        background-color: #bde8e6;
+        color: lightseagreen; }
+  .cottages-block .img {
+    margin-top: 10px;
+    border-radius: 10%; }
+
+.services {
+  margin: 0 auto;
+  float: none; }
+  .services-description__title {
+    text-transform: uppercase;
+    font: 900 27px "Century Gothic"; }
+  .services-description .about__item {
+    font: 500 18px "Century Gothic";
+    list-style: inside none;
+    padding-left: 20px; }
+    .services-description .about__item:before {
+      margin-left: -10px;
+      content: "";
+      font-size: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background-color: black; }
+  .services-view__img {
+    height: auto;
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 15px -1px 61px -8px rgba(87, 77, 87, 0.7); }
+
+.contacts-container {
+  float: none;
+  margin: 0 auto; }
+
+.contacts {
+  vertical-align: middle; }
+  .contacts__title {
+    margin-top: 6%;
+    text-align: center;
+    font: bold 30px "Century Gothic"; }
+  .contacts__list {
+    margin: 3% 0 1% 6%; }
+  .contacts__link:first-of-type, .contacts__address:first-of-type {
+    margin-left: 6%; }
+  .contacts__link:hover, .contacts__address:hover {
+    color: lightseagreen; }
+
+.map__link {
+  width: 100%; }
+
+.reservation-center {
+  float: none;
+  margin: 0 auto; }
+
+.reservation label {
+  display: block;
+  margin-top: 10px; }
+
+.reservation select {
+  text-transform: uppercase;
+  width: 100%; }
+
+.reservation .form-group__control {
+  width: 100%; }
+
+.reservation__title {
+  text-transform: uppercase;
+  font: 900 27px "Century Gothic"; }
+
+body {
+  font-family: "Century Gothic";
+  /*main style */ }

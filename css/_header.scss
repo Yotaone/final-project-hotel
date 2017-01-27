@@ -1,0 +1,159 @@
+
+.header-container {
+
+  background-color: $header-footer-bg-color;
+  font-size: 0;
+
+
+  label {
+      display: none;
+      position: relative;
+      border-radius: 10%;
+      margin: 10px;
+
+      width: 55px;
+      height: 55px;
+      z-index: 9999;
+      font-size: 40px;
+      line-height: 20px;
+      color: $link-hover-color;
+      float: right;
+
+
+
+      padding: 15px;
+      background-color: lightgrey;
+
+      @media #{$tablet-menu} {
+        display: block;
+
+
+      }
+
+
+    }
+
+    .tablet-menu__btn {
+      float: right;
+      display: none;
+
+      &:checked ~ .nav {
+        display: block;
+
+      }
+
+
+
+      
+
+    }
+
+
+  .logo {
+
+
+
+    &__img {
+      min-width: 230px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .nav-m {
+
+    @media #{$tablet-menu} {
+      display: none;
+
+    }
+
+    .menu {
+
+      float: none;
+      text-align: center;
+
+
+
+
+
+      &__item {
+
+        display: inline-block;
+        left: 5%;
+
+        padding-left: 10px;
+        padding-bottom: 10px;
+
+        @media #{$tablet-menu} {
+          padding: 0;
+          float: none;
+          margin: 0 auto;
+          left: 0;
+
+        }
+
+
+
+
+        &:not(:last-child):after{
+          content: "";
+          padding-left: 10px;
+
+          border-right: 2px solid $link-background-color;
+          font: 500 18px $global-font-family;
+
+          @media #{$tablet-menu} {
+            display: none;
+
+          }
+
+
+        }
+
+
+
+      }
+
+      &__link {
+        text-transform: uppercase;
+        color: $link-background-color;
+        font: 500 18px $global-font-family;
+        padding: 10px;
+
+
+        &:hover {
+          color: $link-hover-color;
+
+          border-bottom: 1px solid $link-hover-color;
+
+          @media #{$tablet-menu} {
+            color: $link-hover-color;
+            border-bottom: 0px solid $link-hover-color;
+
+
+
+          }
+
+
+        }
+
+        &:active {
+          color: $link-hover-color;
+          border-bottom: 1px solid $link-hover-color;
+        }
+      }
+
+      .active {
+        color: $link-hover-color;
+      }
+
+
+
+    }
+
+  }
+
+
+}
+
+

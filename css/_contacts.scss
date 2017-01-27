@@ -1,0 +1,43 @@
+
+.contacts-container {
+  float: none;
+  margin: 0 auto;
+}
+.contacts {
+  vertical-align: middle;
+
+  &__title {
+    margin-top: 6%;
+    text-align: center;
+
+    font: bold 30px $global-font-family;
+  }
+
+  &__list {
+    margin: 3% 0 1% 6%;
+
+
+
+  }
+
+  &__link, &__address {
+
+
+
+    &:first-of-type {
+      margin-left: 6%;
+    }
+
+
+    &:hover {
+      color: $link-background-color;
+    }
+
+  }
+
+
+}
+
+.map__link {
+  width: 100%;
+}

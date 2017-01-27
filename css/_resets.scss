@@ -1,0 +1,22 @@
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+body, div, a , p, ul, li, h1, h2, h3 {
+
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+a {
+  cursor: pointer;
+}
+

@@ -1,0 +1,17 @@
+$link-color: rgb(189, 232, 230);
+
+$global-font-family: 'Century Gothic';
+
+
+$link-background-color: lightseagreen;
+$link-hover-color: honeydew;
+$header-footer-bg-color: rgb(50, 50, 42);
+
+$border-radius: 10%;
+
+$tablet-width: 768px;
+
+$tablet-menu-width: 1040px;
+
+$tablet-media: 'screen and (max-width: #{$tablet-width})';
+$tablet-menu: 'screen and (max-width: #{$tablet-menu-width})';

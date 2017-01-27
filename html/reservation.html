@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize-css.v.5.0.0.css">
+    <title>Послуги</title>
+</head>
+<body>
+<div class="header header-container grid-container">
+
+    <div class="logo col-md-2">
+        <a href="../html/index.html" class="logo__link">
+            <img src="../img/logo.png" alt="" class="logo__img">
+        </a>
+    </div>
+    <label for="tablet-menu__btn">&equiv;</label><input type="checkbox" id="tablet-menu__btn" class="tablet-menu__btn">
+    <div class="nav nav-m col-md-10 col-tablet-menu">
+        <ul class="menu col-tablet-menu">
+            <li class="menu__item col-sm"><a href="index.html" class="menu__link">головна</a></li>
+
+            <li class="menu__item col-sm"><a href="cottages.html" class="menu__link">котеджі</a></li>
+
+            <li class="menu__item col-sm"><a href="services.html" class="menu__link">послуги</a></li>
+
+            <li class="menu__item col-sm"><a href="contacts.html" class="menu__link">контакти</a></li>
+
+            <li class="menu__item col-sm"><a href="reservation.html" class="menu__link">забронювати котедж</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="main container grid-container">
+
+    <div class="reservation reservation-center  grid-container col-md-10 col-sm">
+
+        <p class="reservation__title reservation-center col-md-6 col-sm">Бронирование номера</p>
+
+        <form method="post" class="reservation-form reservation-center col-md-6 grid-container col-sm">
+
+            <select name="" id="" class="form-group__control reservation__select-cottage js-sel-reservation">
+                <option value="будинок (низ)" class="selected-cottage">будинок (низ)</option>
+                <option value="еко котедж" class="selected-cottage">еко котедж</option>
+                <option value="номер 'люкс' з терасою" class="selected-cottage">номер "люкс" з терасою</option>
+                <option value="котедж 'закуток'" class="selected-cottage">котедж "закуток"</option>
+                <option value="котедж 'водолій'" class="selected-cottage">котедж "водолій"</option>
+                <option value="котедж з басейном 'надія'" class="selected-cottage">котедж з басейном "Надія"</option>
+                <option value="котедж 'погарь'" class="selected-cottage">котедж "погарь"</option>
+            </select>
+
+            <div class="form-group">
+                <label for="name">Дата</label>
+                <input type="date" class="form-group__control js-get-data" id="date" name="date">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Ім'я</label>
+                <input type="text" class="form-group__control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="tel">Телефон</label>
+                <input type="tel" class="form-group__control" required pattern="[0-9]{5,10}" id="tel" name="tel" >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email<span class="red">*</span></label>
+                <input type="email" class="form-group__control" id="email" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  name="email" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="count">Кількість проживаючих<span class="red">*</span></label>
+                <input type="text" class="form-group__control" id="count" name="count" >
+            </div>
+            <div class="form-group">
+                <label for="message">Побажання</label>
+                <textarea class="form-group__control" name="message" id="message" rows="5"></textarea>
+            </div>
+            <div class="form-group js-error-message"></div>
+            <input type="submit" value="Замовити" class="reservation_submit btn js-submitToStorage">
+        </form>
+
+        </div>
+    </div>
+
+<div class="footer container footer-m grid-container ">
+    <div class="footer-hashtag col-md-4 col-sm vertical-center">
+        <p class="footer-hashtag__text footer__text">#visithatarizbyara</p>
+    </div>
+
+    <div class="footer-social col-md-4 col-sm vertical-center">
+        <a href="#" class="footer-social__btn footer-social__twitter"></a>
+        <a href="#" class="footer-social__btn footer-social__facebook"></a>
+        <a href="#" class="footer-social__btn footer-social__youtube"></a>
+    </div>
+
+    <div class="footer-copyright col-md-4 col-sm vertical-center">
+        <a href="#" class="footer-copyright__link">
+            <p class="footer-copyright__text  footer__text">Website by Pastil Yevgeniy</p>
+        </a>
+    </div>
+</div>
+
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/active-menu.js"></script>
+<script src="../js/reservation.js"></script>
+
+
+</body>
+</html>
